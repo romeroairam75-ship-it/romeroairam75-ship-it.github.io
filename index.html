@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>María José López Romero | Ingeniería Mecatrónica</title>
+<meta name="description" content="Portafolio de María José López Romero, estudiante de 3.er semestre de Ingeniería Mecatrónica en la UMAD: automatización, electrónica y software.">
+<meta property="og:title" content="María José López Romero | Ingeniería Mecatrónica">
+<meta property="og:description" content="Automatización, electrónica y software. Proyectos y habilidades técnicas.">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f5f7fb;--s1:#fff;--s2:#eaf0fa;--tx:#162033;--mu:#506078;--ln:#d6dfef;--ac:#2563eb;--ac2:#0891b2;--act:#1d4ed8;--on:#fff;--sh:0 10px 30px rgba(25,45,95,.09);
+--f:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0a101e;--s1:#121c33;--s2:#0e1729;--tx:#e8edf7;--mu:#a3b1cb;--ln:#26385a;--ac:#3b82f6;--ac2:#22d3ee;--act:#7cb3ff;--sh:0 10px 30px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0a101e;--s1:#121c33;--s2:#0e1729;--tx:#e8edf7;--mu:#a3b1cb;--ln:#26385a;--ac:#3b82f6;--ac2:#22d3ee;--act:#7cb3ff;--sh:0 10px 30px rgba(0,0,0,.4)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+body{font-family:var(--f);background:var(--bg);color:var(--tx);line-height:1.7;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--s1);z-index:40}
+a{color:inherit}button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--ac);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ac);color:var(--on);padding:8px 14px;border-radius:8px;z-index:50}.skip:focus{left:8px}
+.w{width:min(1100px,100% - 40px);margin-inline:auto}
+#pg{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;width:0;background:linear-gradient(90deg,var(--ac),var(--ac2));z-index:45}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--s1) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--ln)}
+.bar{display:flex;align-items:center;gap:12px;min-height:64px}
+.logo{font-weight:800;text-decoration:none;letter-spacing:.4px;white-space:nowrap}.logo b{color:var(--act)}
+nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-left:auto}nav::-webkit-scrollbar{display:none}
+nav a{text-decoration:none;color:var(--mu);font-size:14px;font-weight:600;padding:8px 11px;border-radius:8px;white-space:nowrap}
+nav a:hover,nav a.on{color:var(--act);background:var(--s2)}
+#th{width:40px;height:40px;border-radius:10px;border:1px solid var(--ln);background:var(--s1);flex:none}
+.hero{padding:clamp(52px,9vw,104px) 0 clamp(44px,7vw,80px);position:relative;overflow:hidden;
+background:radial-gradient(800px 380px at 90% -10%,color-mix(in srgb,var(--ac) 24%,transparent),transparent),linear-gradient(var(--ln) 1px,transparent 1px) 0 0/44px 44px,linear-gradient(90deg,var(--ln) 1px,transparent 1px) 0 0/44px 44px,var(--bg);background-blend-mode:normal}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,var(--bg));pointer-events:none}
+.hg{position:relative;z-index:1;display:grid;gap:40px;align-items:center}
+@media(min-width:820px){.hg{grid-template-columns:1.5fr .7fr}}
+.eb{display:inline-flex;gap:8px;align-items:center;font-size:13px;font-weight:700;color:var(--act);background:var(--s1);border:1px solid var(--ln);padding:6px 12px;border-radius:999px}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2)}
+h1{font-size:clamp(34px,6.4vw,62px);line-height:1.08;margin:18px 0 8px;letter-spacing:-.025em}
+h1 span{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:clamp(18px,2.6vw,23px);font-weight:600;color:var(--mu)}
+.lead{margin-top:16px;color:var(--mu);max-width:60ch;font-size:17px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;gap:8px;align-items:center;padding:12px 22px;border-radius:10px;font-weight:700;text-decoration:none;border:1px solid transparent;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--sh)}.btn.p{background:var(--ac);color:var(--on)}.btn.g{background:var(--s1);border-color:var(--ln)}
+.st{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.st div{background:var(--s1);border:1px solid var(--ln);border-radius:14px;padding:12px 18px;min-width:120px}
+.st b{display:block;font-size:26px;line-height:1.2;color:var(--act)}.st small{color:var(--mu);font-size:13px;font-weight:600}
+.av{justify-self:center;width:min(250px,64vw);aspect-ratio:1;border-radius:30px;display:grid;place-items:center;font-size:clamp(64px,12vw,90px);font-weight:800;color:var(--on);background:linear-gradient(135deg,var(--ac),var(--ac2));box-shadow:var(--sh);transform:rotate(-4deg)}
+section{padding:clamp(52px,8vw,84px) 0}section.alt{background:var(--s2);border-block:1px solid var(--ln)}
+.k{font-size:13px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--act)}
+h2{font-size:clamp(26px,4vw,36px);margin:6px 0 10px;letter-spacing:-.01em}.sub{color:var(--mu);max-width:60ch;margin-bottom:26px}
+.ab{display:grid;gap:28px}@media(min-width:820px){.ab{grid-template-columns:1.6fr 1fr}}
+.ab p{color:var(--mu);margin-bottom:14px;max-width:65ch}
+.fa{display:grid;gap:12px}.fa div{background:var(--s1);border:1px solid var(--ln);border-radius:14px;padding:14px 18px}
+.fa small{display:block;color:var(--mu);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.gr{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.c{background:var(--s1);border:1px solid var(--ln);border-radius:16px;padding:24px;box-shadow:var(--sh);display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
+.c:hover{transform:translateY(-4px);border-color:var(--ac)}.c h3{font-size:18px;margin-bottom:8px}.c p{color:var(--mu);font-size:15px;flex:1}
+.ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px;margin-bottom:14px;background:var(--s2);border:1px solid var(--ln)}
+.tg{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.t{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--s2);border:1px solid var(--ln);color:var(--act)}
+.c.f{border-color:var(--ac)}.fl{align-self:flex-start;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:var(--ac);color:var(--on);padding:3px 10px;border-radius:999px;margin-bottom:12px}
+.fi{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.fi button{padding:8px 16px;border-radius:999px;border:1px solid var(--ln);background:var(--s1);font-weight:700;font-size:14px;color:var(--mu)}
+.fi button[aria-pressed=true]{background:var(--ac);border-color:var(--ac);color:var(--on)}
+.ed{display:flex;gap:18px;background:var(--s1);border:1px solid var(--ln);border-left:5px solid var(--ac);border-radius:14px;padding:24px;box-shadow:var(--sh)}
+.ed h3{font-size:20px}.ed .m{color:var(--act);font-weight:700;font-size:14px;margin:2px 0 8px}.ed p{color:var(--mu)}
+.ct{text-align:center}.ct p{color:var(--mu);max-width:52ch;margin:0 auto}.ct .cta{justify-content:center}
+footer{padding:26px 0;text-align:center;color:var(--mu);font-size:13px;border-top:1px solid var(--ln);background:var(--s1)}
+#up{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;border:1px solid var(--ln);background:var(--s1);box-shadow:var(--sh);opacity:0;pointer-events:none;transition:opacity .25s;z-index:30}
+#up.s{opacity:1;pointer-events:auto}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}.c,.btn{transition:none}}
+@media(max-width:560px){.logo span{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a><div id="pg"></div>
+<header><div class="w bar">
+<a class="logo" href="#inicio">MJ<b>.</b><span> Mecatrónica</span></a>
+<nav aria-label="Principal"><a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Proyectos</a><a href="#habilidades">Habilidades</a><a href="#formacion">Formación</a><a href="#contacto">Contacto</a></nav>
+<button id="th" aria-label="Cambiar tema claro u oscuro">🌓</button></div></header>
+<main id="main">
+<section class="hero" id="inicio"><div class="w hg"><div>
+<span class="eb"><i class="dot"></i> Abierta a prácticas y colaboraciones</span>
+<h1>Construyo sistemas que <span>piensan y se mueven</span></h1>
+<p class="role">María José López Romero · Estudiante de 3.er semestre de Ingeniería Mecatrónica</p>
+<p class="lead">Integro electrónica, programación y automatización para convertir ideas en soluciones funcionales, desde circuitos y PLC hasta software en Python.</p>
+<div class="cta"><a class="btn p" href="#proyectos">Ver proyectos</a><a class="btn g" href="#contacto">Contáctame</a></div>
+<div class="st"><div><b>8</b><small>Proyectos</small></div><div><b>3</b><small>Áreas de trabajo</small></div><div><b>UMAD</b><small>Puebla, México</small></div></div>
+</div><div class="av" aria-hidden="true">MJ</div></div></section>
+
+<section id="sobre-mi"><div class="w ab rv"><div>
+<div class="k">Sobre mí</div><h2>Del circuito al código</h2>
+<p>Soy estudiante de tercer semestre de Ingeniería Mecatrónica y me interesa unir electrónica, programación y diseño para resolver problemas reales con tecnología.</p>
+<p>He trabajado con Arduino, Python, PLC y HMI, simulación, diseño de PCB y planos eléctricos. Busco seguir creciendo con proyectos cada vez más completos.</p></div>
+<div class="fa"><div><small>Carrera</small><strong>Ingeniería Mecatrónica · 3.er semestre</strong></div><div><small>Universidad</small><strong>Universidad Madero (UMAD)</strong></div><div><small>Ubicación</small><strong>Puebla, México</strong></div></div></div></section>
+
+<section class="alt" id="proyectos"><div class="w rv">
+<div class="k">Proyectos</div><h2>Lo que he construido</h2><p class="sub">Proyectos académicos y personales de automatización, electrónica y software.</p>
+<div class="fi" role="group" aria-label="Filtrar proyectos"></div><div class="gr" id="pj"></div></div></section>
+
+<section id="habilidades"><div class="w rv">
+<div class="k">Habilidades</div><h2>Herramientas y competencias</h2><p class="sub">Lo que uso para diseñar, simular, programar y automatizar.</p>
+<div class="gr">
+<article class="c"><div class="ic" aria-hidden="true">💻</div><h3>Programación</h3><p>Algoritmos, análisis de datos y control de sistemas.</p><div class="tg"><span class="t">Python</span><span class="t">Arduino</span></div></article>
+<article class="c"><div class="ic" aria-hidden="true">⚡</div><h3>Electrónica</h3><p>Circuitos, sensores, control de motores y de potencia.</p><div class="tg"><span class="t">Transistores</span><span class="t">TRIAC</span><span class="t">Sensores</span><span class="t">PCB</span></div></article>
+<article class="c"><div class="ic" aria-hidden="true">🏭</div><h3>Automatización</h3><p>Sistemas con PLC, HMI y contactores, con diseño de planos.</p><div class="tg"><span class="t">PLC</span><span class="t">HMI</span><span class="t">AutoCAD Electrical</span><span class="t">EPLAN</span></div></article>
+<article class="c"><div class="ic" aria-hidden="true">🧪</div><h3>Simulación y 3D</h3><p>Validación de diseños y modelado tridimensional.</p><div class="tg"><span class="t">Proteus</span><span class="t">Tinkercad</span><span class="t">FluidSIM</span><span class="t">Diseño 3D</span></div></article>
+</div></div></section>
+
+<section class="alt" id="formacion"><div class="w rv">
+<div class="k">Formación</div><h2>Formación académica</h2>
+<article class="ed"><div class="ic" aria-hidden="true">🎓</div><div><h3>Ingeniería Mecatrónica</h3><div class="m">Universidad Madero (UMAD) · 3.er semestre</div><p>Programación, electrónica, sistemas mecánicos y automatización.</p></div></article></div></section>
+
+<section class="ct" id="contacto"><div class="w rv">
+<div class="k">Contacto</div><h2>Trabajemos juntos</h2>
+<p>Si te interesa mi trabajo o quieres colaborar, revisa mi código y proyectos en GitHub.</p>
+<div class="cta"><a class="btn p" href="https://github.com/romeroairam75-ship-it" target="_blank" rel="noopener noreferrer">Ver mi GitHub</a></div></div></section>
+</main>
+<footer>© 2026 María José López Romero · Ingeniería Mecatrónica · Puebla, México</footer>
+<button id="up" aria-label="Volver arriba">↑</button>
+<script>
+(function(){
+var P=[
+{c:"Automatización",i:"📊",f:1,t:"Registro de temperatura con PLC y HMI",d:"Registro histórico de temperatura: termopar, acondicionador de señal, entrada analógica del PLC y HMI con temperatura actual, gráfica, alarmas y valores máximo y mínimo.",g:["PLC","HMI","Termopar"]},
+{c:"Automatización",i:"📦",f:1,t:"Diseño eléctrico de una emplayadora",d:"Proyecto en equipo con diseño eléctrico y electrónico de una emplayadora: planos en AutoCAD Electrical/EPLAN y control con Arduino, sensor y contactor.",g:["EPLAN","Arduino","Contactor"]},
+{c:"Electrónica",i:"💡",t:"Dimmer con TRIAC",d:"Regulador de intensidad para un foco de 127 V/60 W con TRIAC BTA08 y DIAC DB3, con análisis de señales y PCB de una cara.",g:["TRIAC","DIAC","PCB"]},
+{c:"Software",i:"🧟",t:"Apocalipsis: Zombie Survival",d:"Videojuego FPS 3D en Python con Ursina: escenario, oleadas de zombies, salud, munición, disparos y pantalla de derrota.",g:["Python","Ursina"]},
+{c:"Automatización",i:"🔥",t:"Detección de incendios",d:"Sistema con sensor infrarrojo, Arduino y servomotores para detectar condiciones de incendio.",g:["Arduino","Infrarrojo","Servomotores"]},
+{c:"Electrónica",i:"🌡️",t:"Medición con termopar",d:"Instrumentación y medición de temperatura mediante un sensor termopar.",g:["Instrumentación","Termopar"]},
+{c:"Electrónica",i:"⚙️",t:"Puente H",d:"Control del sentido de giro de un motor mediante transistores y programación en Arduino.",g:["Transistores","Arduino"]},
+{c:"Software",i:"📈",t:"Análisis de datos con Python",d:"Procesamiento de datos CSV, regresión polinomial, coeficiente R² y cálculo de derivadas.",g:["Python","Regresión","CSV"]}];
+var pj=document.getElementById("pj"),fi=document.querySelector(".fi"),cats=["Todos","Automatización","Electrónica","Software"];
+function show(c){pj.innerHTML=P.filter(function(p){return c==="Todos"||p.c===c}).map(function(p){
+return '<article class="c'+(p.f?' f':'')+'">'+(p.f?'<span class="fl">Destacado</span>':'')+'<div class="ic" aria-hidden="true">'+p.i+'</div><h3>'+p.t+'</h3><p>'+p.d+'</p><div class="tg">'+p.g.map(function(x){return '<span class="t">'+x+'</span>'}).join("")+'</div></article>'}).join("");
+fi.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed",b.textContent===c)})}
+cats.forEach(function(c){var b=document.createElement("button");b.textContent=c;b.onclick=function(){show(c)};fi.appendChild(b)});show("Todos");
+var r=document.documentElement,th=document.getElementById("th");
+try{var s=localStorage.getItem("th");if(s)r.setAttribute("data-theme",s)}catch(e){}
+th.onclick=function(){var d=r.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"),n=d==="dark"?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("th",n)}catch(e){}};
+var pg=document.getElementById("pg"),up=document.getElementById("up");
+addEventListener("scroll",function(){var h=r.scrollHeight-innerHeight;pg.style.width=(h>0?scrollY/h*100:0)+"%";up.classList.toggle("s",scrollY>600)},{passive:true});
+up.onclick=function(){scrollTo({top:0})};
+var rv=document.querySelectorAll(".rv");
+if(!("IntersectionObserver" in window)){rv.forEach(function(e){e.classList.add("in")});return}
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.1});
+rv.forEach(function(e){io.observe(e)});
+var L=document.querySelectorAll("nav a"),S=[];L.forEach(function(a){var t=document.querySelector(a.getAttribute("href"));if(t)S.push([a,t])});
+var so=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){L.forEach(function(l){l.classList.remove("on")});S.forEach(function(p){if(p[1]===x.target)p[0].classList.add("on")})}})},{rootMargin:"-40% 0px -55% 0px"});
+S.forEach(function(p){so.observe(p[1])});
+})();
+</script>
+</body>
+</html>
